@@ -1,0 +1,11 @@
+@BASE_API_URL = http://localhost:3001/api
+
+### GET request to obtain the API version
+GET {{BASE_API_URL}}/version
+
+### GET request to obtain the API token
+GET {{BASE_API_URL}}/v1/getAccessToken
+
+### GET request to obtain all the matches
+GET {{BASE_API_URL}}/v1/getAllMatches
+Authorization: Bearer YuHBdSlDXY000xa8IlCm7Qgq4_s

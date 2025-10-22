@@ -1,0 +1,197 @@
+.schedulePage {
+  width: 100%;
+}
+
+.scheduleHeading {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #182c62;
+}
+
+.scheduleTableContainer {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.scheduleTable {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.scheduleTable thead tr {
+  height: 40px;
+  background-color: #e4edf2;
+}
+
+.scheduleTable th {
+  font-size: 12px;
+  font-weight: bold;
+  color: #4b5c68;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.scheduleTable th.homeTeamColumn {
+  text-align: right;
+  padding-right: 2.25rem;
+}
+
+.scheduleTable th.awayTeamColumn {
+  text-align: left;
+  padding-left: 2.25rem;
+}
+
+.scheduleTable th.dateTimeColumn {
+  padding-left: 1.25rem;
+}
+
+.scheduleTable tbody tr {
+  height: 70px;
+}
+
+.scheduleTable td {
+  padding: 10px;
+  font-size: 14px;
+  color: #4b5c68;
+  font-weight: 500;
+}
+
+.row {
+  border-top: 1px solid #e4edf2;
+}
+
+.row:last-child {
+  border-bottom: 1px solid #e4edf2;
+}
+
+.evenRow {
+  background-color: #f6f7f7;
+}
+
+.dateTime {
+  display: flex;
+  width: fit-content;
+  padding-left: 0.5rem;
+  flex-direction: column;
+}
+
+.matchDate,
+.matchTime {
+  text-align: right;
+}
+
+.matchTime {
+  margin-top: 4px;
+}
+
+.homeTeamColumn th {
+  text-align: right;
+}
+
+.awayTeamColumn {
+  text-align: left;
+}
+
+.homeTeam,
+.awayTeam {
+  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.homeTeam {
+  justify-content: flex-end;
+}
+
+.awayTeam {
+  justify-content: flex-start;
+}
+
+.teamName,
+.teamScore {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.homeTeam .teamScore {
+  margin-left: 1rem;
+  margin-right: -0.875rem;
+}
+
+.awayTeam .teamScore {
+  margin-right: 1rem;
+  margin-left: -0.875rem;
+}
+
+.teamFlag {
+  min-width: 53px;
+  width: 53px;
+  height: 37px;
+  margin: 0 5px;
+}
+
+.scheduleTable .scoreSeparator {
+  font-weight: bold;
+  font-size: 16px;
+  color: #4b5c68;
+  padding: 0;
+  min-width: 1.5rem;
+  width: 1.5rem;
+  text-align: center;
+}
+
+.spinnerContainer {
+  margin-top: 6rem;
+}
+
+.emptyState {
+  width: 90%;
+  padding: 40px 0;
+  text-align: center;
+  color: #4b5c68;
+}
+
+.emptyStateTitle {
+  font-weight: bold;
+}
+
+.errorState {
+  margin-top: 4rem;
+  text-align: center;
+  color: #4b5c68;
+}
+
+.errorStateTitle {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .stadiumColumn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .scheduleTable {
+    width: 100%;
+  }
+
+  .dateTimeColumn {
+    display: none;
+  }
+
+  .scheduleTable {
+    width: 100%;
+  }
+
+  .scoreSeparator {
+    padding: 0;
+    width: 20px;
+  }
+}

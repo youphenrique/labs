@@ -1,0 +1,163 @@
+.leaderboardPage {
+  width: 100%;
+}
+
+.leaderboardHeading {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #182c62;
+}
+
+.tableContainer {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.table thead tr {
+  height: 40px;
+  background-color: #e4edf2;
+}
+
+.table th {
+  font-size: 12px;
+  font-weight: bold;
+  color: #4b5c68;
+  text-align: right;
+  padding: 0 10px;
+}
+
+.table th.teamNameCol {
+  text-align: left;
+}
+
+.teamNameCol {
+  text-align: left;
+}
+
+.table tbody tr {
+  height: 70px;
+}
+
+.table td {
+  padding: 10px;
+  font-size: 14px;
+  color: #4b5c68;
+  font-weight: 500;
+  text-align: right;
+}
+
+.rightCol {
+  text-align: right;
+
+  span {
+    display: inline-block;
+    width: 1.125rem;
+    text-align: center;
+  }
+}
+
+.row {
+  border-top: 1px solid #e4edf2;
+}
+
+.row:last-child {
+  border-bottom: 1px solid #e4edf2;
+}
+
+.evenRow {
+  background-color: #f6f7f7;
+}
+
+.teamCell {
+  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.teamFlag {
+  min-width: 53px;
+  width: 53px;
+  height: 37px;
+  margin: 0 5px;
+}
+
+.teamName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pointsCol {
+  text-align: right;
+}
+
+.points {
+  color: #025feb;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  width: 2.4rem;
+  text-align: center;
+}
+
+.spinnerContainer {
+  margin-top: 6rem;
+}
+
+.emptyState {
+  width: 90%;
+  padding: 40px 0;
+  text-align: center;
+  color: #4b5c68;
+}
+
+.emptyStateTitle {
+  font-weight: bold;
+}
+
+.errorState {
+  margin-top: 4rem;
+  text-align: center;
+  color: #4b5c68;
+}
+
+.errorStateTitle {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.desktopOnly {
+  display: table-cell;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .table {
+    width: 100%;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: table-cell;
+  }
+
+  .teamNameCol {
+    text-align: left;
+  }
+}
