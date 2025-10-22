@@ -23,7 +23,7 @@
   "devDependencies": {
     "@nuxtjs/storybook": "^8.3.3",
     "@pandacss/dev": "^0.53.4",
-    "@playwright/test": "^1.51.1",
+    "@playwright/test": "^1.56.1",
     "@types/node": "^20",
     "prettier": "3.4.2",
     "typescript": "^5",
