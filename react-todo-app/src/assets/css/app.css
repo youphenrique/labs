@@ -1,0 +1,55 @@
+.container {
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.container span {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.title {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(175, 47, 47, 0.15);
+  padding-right: 20px;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+}
+
+.title h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.info {
+  margin: 65px auto 0;
+  color: #bfbfbf;
+  font-size: 10px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.info p {
+  margin: 10px 0;
+}
+
+.info a {
+  color: #bfbfbf;
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 469px) {
+  .title {
+    font-size: 80px;
+  }
+}

@@ -1,0 +1,78 @@
+
+:root {
+  --todo-color: rgba(26, 26, 26, 0.8);
+}
+
+.todoItem {
+  position: relative;
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+  min-height: 59px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.todoCheckmark {
+  display: block;
+  border: 2px solid #e6e6e6;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding-top: 1px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.todoCheckmarked {
+  composes: todoCheckmark;
+}
+
+.todoCheckmarked::after {
+  content: '';
+  background: url("../svg/checkmark-icon.svg");
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-size: 100%;
+}
+
+.todoEdited {
+  color: var(--todo-color);
+  font-size: 1em;
+  height: 100%;
+  flex: 1;
+  box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+  padding: 6px;
+  border: 1px solid #999;
+}
+
+.todo {
+  color: var(--todo-color);
+  height: 100%;
+  padding: 10px 10px 10px 0;
+  flex: 1;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 469px) {
+  .todo {
+    font-size: 18px;
+  }
+}
+
+.todoCompleted {
+  composes: todo;
+  color: rgba(0, 0, 0, 0.2);
+  text-decoration: line-through;
+}
+
+.todoCloseIcon {
+  height: 100%;
+  width: 40px;
+  padding-top: 5px;
+}
+
+.todoCloseIcon img {
+  cursor: pointer;
+}
