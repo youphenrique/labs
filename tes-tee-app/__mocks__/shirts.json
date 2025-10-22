@@ -1,0 +1,58 @@
+[
+  {
+    "id": "82a9d946-8d6b-4eaf-97b3-0fa72267ccc4",
+    "image": "/assets/shirts/white-tee.png",
+    "name": "Tes-tee white cotton shirt",
+    "color": "white",
+    "sizes": ["XS", "L", "XL"]
+  },
+  {
+    "id": "dfc1d736-c2f1-496b-bb21-60ea2976bc99",
+    "image": "/assets/shirts/gray-tee.png",
+    "name": "Tes-tee gray cotton shirt",
+    "color": "gray",
+    "sizes": ["XS", "S", "M", "XL"]
+  },
+  {
+    "id": "fd3cb848-1ea9-4209-9921-6c408f8676ad",
+    "image": "/assets/shirts/blue-tee.png",
+    "name": "Tes-tee blue cotton shirt",
+    "color": "blue",
+    "sizes": ["L", "XL"]
+  },
+  {
+    "id": "2ab14d8c-ce76-4f24-8224-35bf33fb2239",
+    "image": "/assets/shirts/orange-tee.png",
+    "name": "Tes-tee orange cotton shirt",
+    "color": "orange",
+    "sizes": ["M", "L", "XL", "XXL"]
+  },
+  {
+    "id": "800a0881-c5b1-4ca6-ae7b-a82e859d0d0a",
+    "image": "/assets/shirts/red-tee.png",
+    "name": "Tes-tee red cotton shirt",
+    "color": "red",
+    "sizes": ["XS", "S", "M"]
+  },
+  {
+    "id": "01559f17-8d4e-4697-9a6d-36bdf00b63cd",
+    "image": "/assets/shirts/green-tee.png",
+    "name": "Tes-tee green cotton shirt",
+    "color": "green",
+    "sizes": ["XS"]
+  },
+  {
+    "id": "114de409-d2c6-4ee6-9f09-922d78c922ed",
+    "image": "/assets/shirts/purple-tee.png",
+    "name": "Tes-tee purple cotton shirt",
+    "color": "purple",
+    "sizes": ["M", "L", "XXL"]
+  },
+  {
+    "id": "d22a2165-44d0-49ca-bb38-858a63ee0fcf",
+    "image": "/assets/shirts/yellow-tee.png",
+    "name": "Tes-tee yellow cotton shirt",
+    "color": "yellow",
+    "sizes": ["M", "L", "S"]
+  }
+]
