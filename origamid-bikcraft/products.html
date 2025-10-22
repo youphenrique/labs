@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bikcraft - Conheça as linhas Passeio, Retrô e Esporte</title>
+  <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte.">
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Bikcraft - Conheça as linhas Passeio, Retrô e Esporte"/>
+  <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."/>
+  <meta property="og:url" content="http://bikcraft.com/produtos.html"/>
+  <meta property="og:image" content="http://bikcraft.com/img/og-image.png"/>
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <script> const page = 'products'; </script>
+</head>
+<body>
+  <header id="vue-header" class="header">
+    <vue-header
+        v-bind:active-menu="activeMenu"
+    ></vue-header>
+  </header>
+  <section class="inner-introduction products-introduction">
+    <div class="container">
+      <h1>Produtos</h1>
+      <p>Conheça todos os nossos produtos</p>
+    </div>
+  </section>
+  <section id="vue-products" class="animate-inner">
+    <vue-item-product
+      v-for="product in products"
+      v-bind:key="product.id"
+      v-bind:name="product.name"
+      v-bind:images-src="product.imagesSrc"
+      v-bind:images-alt="product.imagesAlt"
+    ></vue-item-product>
+  </section>
+  <section id="vue-form-data" class="budget">
+    <vue-form-data
+        v-bind:seen="seen"
+        textarea-label="Especificações"
+    ></vue-form-data>
+  </section>
+  <div id="vue-break" class="break">
+    <vue-break></vue-break>
+  </div>
+  <footer id="vue-footer">
+    <vue-footer
+      v-bind:social-networks-component="socialNetworksComponent"
+    ></vue-footer>
+  </footer>
+
+  <script src="assets/js/lora.min.js"></script>
+  <script src="assets/js/vue.min.js"></script>
+  <script src="assets/js/products-bundle.js"></script>
+</body>
+</html>

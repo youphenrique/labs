@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bikcraft - Conheça o portfólio de clientes</title>
+  <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte.">
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Bikcraft - Conheça o portfólio de clientes"/>
+  <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."/>
+  <meta property="og:url" content="http://bikcraft.com/portfolio.html"/>
+  <meta property="og:image" content="http://bikcraft.com/img/og-image.png"/>
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <script> const page = 'portfolio'; </script>
+</head>
+<body>
+  <header id="vue-header" class="header">
+    <vue-header
+      v-bind:active-menu="activeMenu"
+    ></vue-header>
+  </header>
+  <section class="inner-introduction portfolio-introduction">
+    <div class="container">
+      <h1>Portfólio</h1>
+      <p>Conheça os projetos que amamos mostrar</p>
+    </div>
+  </section>
+  <section id="vue-quote" class="container animate-inner">
+    <transition name="component-fade" mode="out-in">
+      <component v-bind:is="view"></component>
+    </transition>
+  </section>
+  <section id="vue-portfolio" class="portfolio animate-inner-2">
+    <vue-portfolio
+      v-bind:seen="seen"
+      v-bind:change-transition="changeTransition"
+      v-bind:active-transition="activeTransition"
+      v-bind:images="images"
+    ></vue-portfolio>
+  </section>
+  <div id="vue-break" class="break animate-inner-2">
+    <vue-break></vue-break>
+  </div>
+  <footer id="vue-footer" class="animate-inner-2">
+    <vue-footer
+      v-bind:social-networks-component="socialNetworksComponent"
+    ></vue-footer>
+  </footer>
+
+  <script src="assets/js/lora.min.js"></script>
+  <script src="assets/js/vue.min.js"></script>
+  <script src="assets/js/portfolio-bundle.min.js"></script>
+</body>
+</html>

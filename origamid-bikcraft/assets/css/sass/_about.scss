@@ -1,0 +1,35 @@
+
+.about-introduction {
+  background: url("../img/bg-sobre.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.about-mission {
+  padding-top: 60px;
+  p {
+    line-height: 25px;
+    margin-bottom: 1em;
+    padding-right: 60px;
+    @include type(16);
+    @include device(mobile) {
+      padding-right: 0;
+      @include type(14);
+    }
+  }
+  ul li {
+    font-family: $secondary-font;
+    line-height: 30px;
+    @include type(16);
+    @include device(mobile) {
+      @include type(14);
+      line-height: 25px;
+    }
+  }
+}
+
+.team-photo {
+  padding-top: 20px;
+  @include device(mobile) {
+    margin-bottom: 0;
+  }
+}

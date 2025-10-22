@@ -1,0 +1,195 @@
+
+.products-introduction {
+  background: url("../img/bg-produtos.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.item-product {
+  padding-top: 60px;
+  h2 {
+    color: $ternary-color;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    position: relative;
+    top: -180px;
+    text-align: center;
+    margin-bottom: -46px;
+    @include type(36);
+    @include device(tablet) {
+      top: -150px;
+    }
+    @include device(mobile) {
+      top: -100px;
+      margin-bottom: -62px;
+    }
+    &:before, &:after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: $ternary-color;
+      margin: 5px auto;
+    }
+  }
+}
+
+.item-product div:first-child img,
+.item-product > div:not(.grid-11) {
+  box-shadow: 0 1px 25px 0 rgba(0, 0, 0, .1);
+}
+
+.icon-product {
+  background: $secondary-color;
+  padding: 70px 0;
+  img {
+    margin: auto;
+  }
+  @include device(tablet) {
+    padding: 41px 0;
+  }
+  @include device(mobile) {
+    padding: 41px 0;
+  }
+}
+
+.info-product {
+  background: $secondary-color;
+  p {
+    height: 182px;
+    color: $ternary-color;
+    padding: 30px 40px;
+    @include type(18);
+    @include device(tablet) {
+      height: 124px;
+      line-height: 22px;
+      padding: 20px;
+      @include type(16);
+    }
+    @include device(mobile) {
+      height: auto;
+      line-height: 22px;
+      padding: 20px;
+      @include type(16);
+    }
+  }
+  ul li {
+    background: $primary-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    float: left;
+    width: 230px;
+    height: 49px;
+    text-align: center;
+    padding-top: 13px;
+    &:first-child {
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+    }
+    &:nth-child(2) {
+      border-left: 1px solid;
+      border-bottom: 1px solid;
+    }
+    &:nth-child(3) {
+      border-right: 1px solid;
+      border-top: 1px solid;
+    }
+    &:last-child {
+      border-left: 1px solid;
+      border-top: 1px solid;
+    }
+    @include type(18);
+    line-height: 20px;
+    @include device(tablet) {
+      width: 182px;
+    }
+    @include device(mobile) {
+      width: 150px;
+      @include type(14);
+    }
+  }
+}
+
+/* Budget */
+
+.budget {
+  background: $secondary-color;
+  width: 100%;
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  h2 {
+    color: $primary-color;
+    &:after {
+      background: $primary-color;
+    }
+  }
+  .form {
+    padding-right: 60px;
+    label {
+      display: block;
+      color: $ternary-color;
+      font-family: $secondary-font;
+      margin-bottom: 4px;
+      @include type(18);
+    }
+    input, textarea {
+      display: block;
+      width: 100%;
+      border: 4px solid $primary-color;
+      background: none;
+      color: $ternary-color;
+      padding: 5px 10px;
+      outline: none;
+      font-family: $secondary-font;
+      margin-bottom: 10px;
+      @include type(16);
+    }
+    button {
+      background: none;
+      padding: 7px 40px;
+      margin-top: 10px;
+    }
+    @include device(mobile) {
+      padding-right: 0;
+    }
+  }
+  .data {
+    > :not(h3) {
+      color: $ternary-color;
+    }
+    h3 {
+      text-transform: uppercase;
+      color: $primary-color;
+      font-weight: bold;
+      @include type(18);
+    }
+    span {
+      display: block;
+      font-family: $secondary-font;
+      @include type(18);
+      line-height: 30px;
+    }
+    > div:nth-of-type(1) {
+      margin-top: 50px;
+    }
+    ul {
+      padding-right: 50px;
+      li {
+        font-family: $secondary-font;
+        padding: 10px;
+        @include type(14);
+        &:nth-child(odd) {
+          background: #1d1d1d;
+        }
+      }
+      @include device(mobile) {
+        padding-right: 0;
+      }
+    }
+    p {
+      margin: 8px 0;
+      @include type(18);
+    }
+  }
+}

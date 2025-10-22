@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bikcraft - Saiba mais sobre a gente</title>
+  <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte.">
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Bikcraft - Saiba mais sobre a gente"/>
+  <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."/>
+  <meta property="og:url" content="http://bikcraft.com/sobre.html"/>
+  <meta property="og:image" content="http://bikcraft.com/img/og-image.png"/>
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <script> const page = 'about'; </script>
+</head>
+<body>
+  <header id="vue-header" class="header">
+    <vue-header
+      v-bind:active-menu="activeMenu"
+    ></vue-header>
+  </header>
+  <section class="inner-introduction about-introduction">
+    <div class="container">
+      <h1>Sobre</h1>
+      <p>Conheça mais sobre a bikcraft</p>
+    </div>
+  </section>
+  <section class="about-mission container animate-inner">
+    <div class="grid-10">
+      <h2 class="inner-subtitle">História, Missão e Visão</h2>
+      <p>
+        Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.
+      </p>
+      <p>
+        Conheça os nossos produtos, pergunte para os nossos clientes e descubra a maravilha de ter uma Bikcraft na sua casa.
+      </p>
+    </div>
+    <div class="grid-6">
+      <h2 class="inner-subtitle">Valores</h2>
+      <ul>
+        <li>– Qualidade no processo com</li>
+        <li>– Foco no cliente sem perder a</li>
+        <li>– Diversão, preservando a</li>
+        <li>– Natureza com sustentabilidade</li>
+      </ul>
+    </div>
+    <div class="grid-16 team-photo">
+      <img src="assets/img/equipe-bikcraft.jpg" alt="Equipe bikcraft">
+    </div>
+  </section>
+  <section id="vue-quality" class="quality">
+    <vue-quality
+      v-bind:seen-call="seenCall"
+    ></vue-quality>
+  </section>
+  <div id="vue-break" class="break">
+    <vue-break></vue-break>
+  </div>
+  <footer id="vue-footer">
+    <vue-footer
+      v-bind:social-networks-component="socialNetworksComponent"
+    ></vue-footer>
+  </footer>
+
+  <script src="assets/js/lora.min.js"></script>
+  <script src="assets/js/vue.min.js"></script>
+  <script src="assets/js/about-bundle.min.js"></script>
+</body>
+</html>

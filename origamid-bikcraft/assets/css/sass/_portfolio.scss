@@ -1,0 +1,87 @@
+
+.portfolio-introduction {
+  background: url("../img/bg-portfolio.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.customer-quote {
+  padding: 60px 0;
+  max-width: 455px;
+  margin: 0 auto;
+  p {
+    font-family: $secondary-font;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    @include type(18);
+  }
+  cite {
+    font-weight: bold;
+    font-style: normal;
+    float: right;
+    @include type(18);
+  }
+}
+
+.selector-transition {
+  position: relative;
+  top: 12px;
+  text-align: center;
+  li {
+    display: inline-block;
+    background: #222222;
+    border-radius: 50%;
+    &:nth-of-type(1) {
+      margin-right: 2px;
+    }
+    &:nth-of-type(2) {
+      margin-left: 2px;
+    }
+    &.active-transition {
+      background: $primary-color;
+    }
+    &:after {
+      content: "";
+      width: 12px;
+      height: 12px;
+      display: block;
+    }
+  }
+}
+
+/* Quote transitions */
+
+.component-fade-enter-active,
+.component-fade-leave-active {
+  transition: opacity .3s ease;
+}
+
+.component-fade-enter,
+.component-fade-leave-to {
+  opacity: 0;
+}
+
+/* Image transition */
+
+.image-transition {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: .3;
+  }
+  5%, 95%  {
+    opacity: 1;
+  }
+  100% {
+    opacity: .3;
+  }
+}
+
+.fade-in-out {
+  animation-name: fadeInOut;
+}
