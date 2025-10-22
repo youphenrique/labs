@@ -25,7 +25,7 @@
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
-    "axios": "^1.11.0",
+    "axios": "^1.12.2",
     "json-fake-server": "^0.0.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
