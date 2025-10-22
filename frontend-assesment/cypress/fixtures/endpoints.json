@@ -1,0 +1,6 @@
+{
+  "createDeck": "/deck/new/?cards=*",
+  "drawCards": "/deck/*/draw/?count=*",
+  "createPile": "/deck/*/pile/*/add/?cards=*",
+  "getPile": "/deck/*/pile/*/list"
+}

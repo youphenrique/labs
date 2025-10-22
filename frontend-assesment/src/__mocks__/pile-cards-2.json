@@ -1,0 +1,62 @@
+{
+  "success": true,
+  "deck_id": "ojxixv5iq1mx",
+  "remaining": 0,
+  "piles": {
+    "cards": {
+      "remaining": 5,
+      "cards": [
+        {
+          "code": "KH",
+          "image": "https://deckofcardsapi.com/static/img/KH.png",
+          "images": {
+            "svg": "https://deckofcardsapi.com/static/img/KH.svg",
+            "png": "https://deckofcardsapi.com/static/img/KH.png"
+          },
+          "value": "KING",
+          "suit": "HEARTS"
+        },
+        {
+          "code": "AD",
+          "image": "https://deckofcardsapi.com/static/img/aceDiamonds.png",
+          "images": {
+            "svg": "https://deckofcardsapi.com/static/img/aceDiamonds.svg",
+            "png": "https://deckofcardsapi.com/static/img/aceDiamonds.png"
+          },
+          "value": "ACE",
+          "suit": "DIAMONDS"
+        },
+        {
+          "code": "AC",
+          "image": "https://deckofcardsapi.com/static/img/AC.png",
+          "images": {
+            "svg": "https://deckofcardsapi.com/static/img/AC.svg",
+            "png": "https://deckofcardsapi.com/static/img/AC.png"
+          },
+          "value": "ACE",
+          "suit": "CLUBS"
+        },
+        {
+          "code": "AS",
+          "image": "https://deckofcardsapi.com/static/img/AS.png",
+          "images": {
+            "svg": "https://deckofcardsapi.com/static/img/AS.svg",
+            "png": "https://deckofcardsapi.com/static/img/AS.png"
+          },
+          "value": "ACE",
+          "suit": "SPADES"
+        },
+        {
+          "code": "KS",
+          "image": "https://deckofcardsapi.com/static/img/KS.png",
+          "images": {
+            "svg": "https://deckofcardsapi.com/static/img/KS.svg",
+            "png": "https://deckofcardsapi.com/static/img/KS.png"
+          },
+          "value": "KING",
+          "suit": "SPADES"
+        }
+      ]
+    }
+  }
+}

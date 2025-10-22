@@ -1,0 +1,8 @@
+.Toastify__toast {
+  border-radius: 0.25rem;
+}
+
+.Toastify__toast-body {
+  font-family: Inter, "Helvetica Neue", sans-serif;
+  font-size: 0.875rem;
+}
